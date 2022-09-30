@@ -4,7 +4,7 @@
 
 let numero = prompt("Escribe un número");
 
-while (isNaN(numero)) {
+while (isNaN(numero) || numero == "" || numero == null) {
     numero = prompt("Escribe un número que sea válido");
 
 }
