@@ -4,8 +4,6 @@ let num3 = (parseInt)(prompt("Introduzca el tercer número"));
 let num4 = (parseInt)(prompt("Introduzca el cuarto número"));
 let num5 = (parseInt)(prompt("Introduzca el quinto número"));
 
-
-
 let array = [num1,num2,num3,num4,num5];
 let mayor=array[0];
 let menor = array[0];
@@ -26,4 +24,10 @@ if(menor>array[i]){
     alert(`El número mayor es ${mayor} y el menor es ${menor}`);
 
 
-
+// for (i=1; i>=5;i++){
+//     let repetir = true;
+//     let num;
+//     while (repetir){
+//         num = prompt("Introduce un número"); 
+//     }
+// }

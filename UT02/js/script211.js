@@ -16,4 +16,8 @@ if (!isNaN(num) && num>0) {
         }
     }
 
+    // num = Number(num);
+    // num >= 0 ? repetir = true :  repetir = false;
+    // (num % 2 == 0) ? alert ("Par") : alert ("impar");
+
 
