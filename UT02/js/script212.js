@@ -33,5 +33,29 @@ while(numero !== "0"){
 }
 
 
+
+
+// -----------------------------------------
+
+
+
+
+
+let num;
+while (num != 0){
+    num = Number(prompt("Introduce un número, te diré si es primo o no"));
+    console.log( isPrime(num) ? "primo" : "no primo");
+   
+}
+
+
+function isPrime(n){
+    for( let i =2; i <= n**(1/2) ; i++ ) {
+    if ( n % i == 0 ) return false;
+    }
+    return true;
+}
+
+
  
  
