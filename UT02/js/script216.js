@@ -1,8 +1,4 @@
 
-
-
-
-
 function convertToBytes(capacity,from){
     let resultado;
 switch(from){

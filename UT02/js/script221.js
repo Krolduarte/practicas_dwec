@@ -1,6 +1,9 @@
 function isNumber(str){
   let result=false;
    (!isNaN(str)) ? result = true : result = false;
+
+
+  //Tambien se puede dejar simplemente asi:  (!isNaN(str));
 return result;
 
 }
