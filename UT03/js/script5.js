@@ -1,7 +1,7 @@
 
 //Crea una función llamada removeUndefined(a) que tome como parámetro un objeto y devuelva una copia del mismo en el que se han eliminado todas las propiedades cuyo valor sea undefined.
 
-// function removeUndefined(obj1){
+ function removeUndefined(obj1){
 
    
     for (let key in clone){
@@ -10,6 +10,7 @@
         }
         return clone;
         }
+    }
     
     let persona = {
         name: 'Lola',
@@ -19,5 +20,3 @@
 
 
  console.log(removeUndefined(persona));
-
-    
