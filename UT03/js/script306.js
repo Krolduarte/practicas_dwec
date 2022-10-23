@@ -10,3 +10,7 @@ function convertBase (str,baseFrom,baseTo){
 }
 
 console.log(convertBase('10',2,10));
+console.log(convertBase('1111011',2,10));    //123
+
+
+// correccion Victor: return  parseInt(str,baseFrom).toString(baseTo);

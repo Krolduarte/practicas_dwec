@@ -8,7 +8,7 @@ function countVowels (str){
     str.toLowerCase();
     let cantidad = 0;
     for (let char of str){
-    if (vocales.includes(char)){
+        if (vocales.includes(char)){
         cantidad++;
     }
 }
