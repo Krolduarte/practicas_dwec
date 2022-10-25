@@ -2,9 +2,8 @@
 
 
 function getOdd(arr) {
-    let arr2 = arr.filter((item) => item % 2 != 0);
-    console.log(arr2);
-
+  return arr.filter((item) => item % 2 != 0);
+   
 };
 
 

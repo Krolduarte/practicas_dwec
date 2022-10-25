@@ -1,6 +1,6 @@
 function sendMessage (arr){
 
-    arr.map((item) =>console.log(`Hola, ${item}, Bienvenido al curso de DWEC`) )
+    arr.forEach((item) =>console.log(`Hola, ${item}, Bienvenido al curso de DWEC`) )
 
 };
 

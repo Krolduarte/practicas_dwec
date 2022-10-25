@@ -18,3 +18,5 @@ let array = [
 
     // [ {name: 'Victor', surname: 'González', nickname: 'vgonzalez73'},
     //   {name: 'Pepe', surname: 'Pérez', nickname: 'pperez25'} ]
+
+    //multiplicar por 10 para q este entre 9 y 0.
