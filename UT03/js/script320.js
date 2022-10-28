@@ -4,14 +4,23 @@
 function sortDates(arr) {
 
 
-    let newfecha = arr.map((item) => item.split('-').join(''));
-    newfecha.sort((a, b) => a - b);
+    //let newfecha = arr.map((item) => item.split('-').join(''));
+    arr.sort((a, b) => {
+        let strA = a.slice(6) + a.slice(3,5) + a.slice(0,2);
+        let strB = a.slice(6) + a.slice(3,5) + a.slice(0,2);
+    
+        return strA > strB ? -1 : 1;
 
-    newfecha = newfecha.map((item) => item.slice(0, 2) + '-' + item.slice(2, 4) + '-' + item.slice(4));
+    });
 
-    return newfecha;
+    return (arr);
 
 }
+
+    //newfecha = newfecha.map((item) => item.slice(0, 2) + '-' + item.slice(2, 4) + '-' + item.slice(4));
+
+    
+
 
 console.log(sortDates(['24-05-2022', '02-12-2018', '14-02-2020','01-07-2005','02-04-2005','01-01-2005']));
 

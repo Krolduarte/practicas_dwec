@@ -13,7 +13,7 @@ function max(arr) {
     return max;
 }
 
-let arr1 = [500, 10, 30, 600, 2, 1000];
+let arr1 = [500, 10, 30, 600, 2, 1];
 
 console.log(max(arr1));
 
