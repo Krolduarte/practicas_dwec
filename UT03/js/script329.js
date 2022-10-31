@@ -62,6 +62,7 @@ let arr = [
     }
 ]
 
+
 //Crea una función llamada getAverages() que calcule para cada alumno la nota media de todos los módulos que ha cursado. Debe devolver un array de la forma { alumno: 'XXX YYY', expediente: 'ZZZZ', nota_media: 00 }
 
 
@@ -71,7 +72,9 @@ function getAverages() {
         return {
             alumno: item.nombre + ' ' + item.ape1 + ' ' + item.ape2,
             expediente: item.expediente,
-            notamedia: ((item.notas.DWEC+item.notas.DIW+item.notas.DWES)/3).toFixed(2),
+            notamedia: Object.values(item.notas).reduce((acum, item, index, arr) => {
+               return (index < arr.length - 1) ? acum + item : (acum + item) / arr.length
+             }, 0).toFixed(2)
 
         }
 
@@ -80,5 +83,26 @@ function getAverages() {
     );
     return nuevo;
 }
-
 console.log(getAverages());
+
+
+
+
+//funciones corregidas en clase:
+
+// function getAverages2() {
+
+//     arr.map((item) => {
+//         return {
+//             alumno: `${dato.nombre}  ${dato.ape1} ${dato.ape2}`,
+//             expediente: item.expediente,
+//             notamedia: Object.values(item.notas)  //devuelve unicamente los valores de ese objeto
+//             .reduce((acum, item, index, arr) => {
+//               return (index < arr.length - 1) ? acum + item : (acum + item) / arr.length
+//              }, 0)
+//             .toFixed(2),
+//         }
+//     }
+//     );
+//     return nuevo;
+// }

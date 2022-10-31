@@ -32,7 +32,7 @@ let arr = [
             DWES: 9.4
         }
     },
-    
+
     {
         nombre: 'Juan',
         ape1: 'Márquez',
@@ -48,47 +48,65 @@ let arr = [
         }
     },
 
-        {
-            nombre: 'Carla',
-            ape1: 'Mendoza',
-            ape2: 'Hernández',
-            dni: '7340831',
-            expediente: '342',
-            pass: 'P@ssw0rd',
-            ciclo: 'DAM',
-            notas: {
-                DWEC: 8,
-                DIW: 5.2,
-                DWES: 4
-            },
+    {
+        nombre: 'Carla',
+        ape1: 'Mendoza',
+        ape2: 'Hernández',
+        dni: '7340831',
+        expediente: '342',
+        pass: 'P@ssw0rd',
+        ciclo: 'DAM',
+        notas: {
+            DWEC: 8,
+            DIW: 5.2,
+            DWES: 4
+        },
     }
 ]
 
 
-function getNumberOfAlumnos(str){
+function getNumberOfAlumnos(str) {
 
 
     let contador = 0;
     let found = arr.forEach(item => {
-        if (item.ciclo == str){
-            contador= contador + 1;;
+        if (item.ciclo == str) {
+            contador = contador + 1;;
         }
     });
-   
-    return  contador;
-    }
-    
 
-    console.log(getNumberOfAlumnos('DAM'));   //3
-    console.log(getNumberOfAlumnos('DAW'));     //1
-
-   
-   
-
-
-// 
+    return contador;
+}
 
 
 
+
+console.log(getNumberOfAlumnos('DAM'));   //3
+console.log(getNumberOfAlumnos('DAW'));     //1
+
+
+
+//soluciones planteada en clase:
+
+// function getNumberOfAlumnos2(str) {
+//     return arr.filter(item => item.ciclo == str)
+// }
+
+// function getNumberOfAlumnos3(str) {
+//     return arr.filter(({ ciclo }) => ciclo == str)
+//         .length;
+// }
+
+
+//USANDO REDUCE
+// function getNumberOfAlumnos2(str) {
+//     return arr.reduce((acum, { ciclo }) => {
+//         if (ciclo == str) {
+//             return ++acum;
+//         }
+//     }, 0);
+
+
+// }
 
 

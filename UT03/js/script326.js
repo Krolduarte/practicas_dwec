@@ -62,7 +62,6 @@ let arr = [
     }
 ]
 
-
 function getAlumnosByCiclo (str){
 
     let name= [];
@@ -73,11 +72,17 @@ function getAlumnosByCiclo (str){
     });
    
     return  name;
-
-
 }
 
-console.log(getAlumnosByCiclo( 'DAW' ));
-console.log(getAlumnosByCiclo( 'DAM' ));
+
+//solucion planteada por Victor
+// function getAlumnosByCiclo2 (str){
+
+//      return arr.filter(item => item.ciclo == str)
+//                .map(
+//                  ({nombre,ape1,ape2}) => nombreCom.push `${nombre} ${ape1} ${ape2}`
+//                  );
+// };
+
 //getAlumnosByCiclo( 'DAW' );     
 // [ 'Pepe Pérez López', 'Juan Márquez Hernández' ] 

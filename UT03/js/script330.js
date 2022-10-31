@@ -1,5 +1,4 @@
 
-
 let arr = [
 
     {
@@ -68,7 +67,7 @@ let arr = [
         ape2: 'Hernández',
         dni: '7340831',
         expediente: '342',
-        pass: '123Contra0123w',
+        pass: 'Contra0123w',
         ciclo: 'DAM',
         notas: {
             DWEC: 8,
@@ -89,7 +88,9 @@ function getUnsecurePass() {
 
     function isMinMayNum(arr) {
         return arr.some(item =>
-            item == item.toLowerCase() &&  item == item.toUpperCase() && item == Number(item)
+            item == item.toLowerCase() &&  
+            item == item.toUpperCase() && 
+            item == Number(item)
         )
         
     }

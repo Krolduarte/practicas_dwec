@@ -30,7 +30,7 @@ let arr = [
             DWES: 9.4
         }
     },
-    
+
     {
         nombre: 'Juan',
         ape1: 'Márquez',
@@ -46,38 +46,42 @@ let arr = [
         }
     },
 
-        {
-            nombre: 'Carla',
-            ape1: 'Mendoza',
-            ape2: 'Hernández',
-            dni: '7340831',
-            expediente: '342',
-            pass: 'P@ssw0rd',
-            ciclo: 'DAW',
-            notas: {
-                DWEC: 8,
-                DIW: 5.2,
-                DWES: 4
-            },
+    {
+        nombre: 'Carla',
+        ape1: 'Mendoza',
+        ape2: 'Hernández',
+        dni: '7340831',
+        expediente: '342',
+        pass: 'P@ssw0rd',
+        ciclo: 'DAW',
+        notas: {
+            DWEC: 8,
+            DIW: 5.2,
+            DWES: 4
+        },
     }
 ]
 
 //nombre de usuario formado por el nombre y la primera letra de cada uno de los apellidos, todo en minúsculas. Crea una función llamada getUsernames() que devuelva un array con los nombres de usuario generados para cada uno de los alumnos.
 
-function getUsernames(){
+function getUsernames() {
 
-  
+
     let username = [];
-    
-    arr.forEach((item =>  
-        username.push( (item.nombre + item.ape1.slice(0,1) + item.ape2.slice(0,1)).toLowerCase())
-         ));
-    
+
+       arr.forEach((item =>
+        username.push((item.nombre + item.ape1.slice(0, 1) + item.ape2.slice(0, 1)).toLowerCase())
+    ));
+
     return username;
-
-
 }
 
-console.log(getUsernames());
+console.log(getUsernames());       // [ 'pepegl', 'juanmh' ]
 
-     // [ 'pepegl', 'juanmh' ]
+
+
+//soluciones de clase:
+// function getUsernames2() {
+//    return arr.map((item => (item.nombre + item.ape1[0] + item.ape2[0]).toLowerCase())
+//     );
+// }
