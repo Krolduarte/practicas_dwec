@@ -77,60 +77,51 @@ let arr = [
     }
 ]
 
-//Crea una una función getUnsecurePass() que devuelva un array con los nombres y apellidos de los alumnos que tengan una contraseña que no cumpla los requisitos de complejidad. Estos requisitos son:
+// function getUnsecurePass() {
 
-// Debe tener por lo menos un carácter en mayúsculas y uno en minúsculas
-// Debe tener por lo menos un dígito
-// Debe tener una longitud mínima de 8 caracteres
+//     function isMinMayNum(arr) {
+//         return arr.some(item =>
+//             item == item.toLowerCase() &&  
+//             item == item.toUpperCase() && 
+//             item == Number(item)
+//         )
+
+//     }
+
+//     let nuevo = arr.map((item) => {
+//         if (item.pass.length > 8 && isMinMayNum(item.pass.split('')) ) {
+//             return 'safe password';
 
 
+//         }else{
+//             return {
+//                 nombre: item.nombre,
+//                 apellido: item.ape1 + ' ' + item.ape2,
+//             }
+
+//         }
+//     })
+
+//     return nuevo;
+// }
+
+
+
+//Corregido
 function getUnsecurePass() {
 
     function isMinMayNum(arr) {
         return arr.some(item =>
-            item == item.toLowerCase() &&  
-            item == item.toUpperCase() && 
+            item == item.toLowerCase() &&
+            item == item.toUpperCase() &&
             item == Number(item)
         )
-        
     }
 
-    let nuevo = arr.map((item) => {
-        if (item.pass.length > 8 && isMinMayNum(item.pass.split('')) ) {
-            return 'safe password';
-               
-            
-        }else{
-            return {
-                nombre: item.nombre,
-                apellido: item.ape1 + ' ' + item.ape2,
-            }
+    return arr.filter((item) => {
+        return !(item.pass.length > 8 && isMinMayNum(item.pass.split('')))
 
-
-        }
-    })
-
-
-
-    return nuevo;
-
+    }).map(item => `${item.nombre}  ${item.ape1} ${item.ape2}`)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 console.log(getUnsecurePass());

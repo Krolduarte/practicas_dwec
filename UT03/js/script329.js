@@ -73,8 +73,8 @@ function getAverages() {
             alumno: item.nombre + ' ' + item.ape1 + ' ' + item.ape2,
             expediente: item.expediente,
             notamedia: Object.values(item.notas).reduce((acum, item, index, arr) => {
-               return (index < arr.length - 1) ? acum + item : (acum + item) / arr.length
-             }, 0).toFixed(2)
+                return (index < arr.length - 1) ? acum + item : (acum + item) / arr.length
+            }, 0).toFixed(2)
 
         }
 
@@ -106,3 +106,22 @@ console.log(getAverages());
 //     );
 //     return nuevo;
 // }
+
+// function getAverages3() {
+
+//     let nuevo = arr.map((item) => {
+//         let notas = Object.values(item.notas);
+//         return {
+//             alumno: item.nombre + ' ' + item.ape1 + ' ' + item.ape2,
+//             expediente: item.expediente,
+//             notamedia: (notas.reduce((acum, nota) => acum += nota, 0) / notas.length).toFixed(2),
+
+//         }
+
+//     }
+
+//     );
+//     return nuevo;
+// }
+
+// console.log(getAverages3());
