@@ -1,0 +1,131 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #206a5d;
+  color: white;
+  font-size: 7em;
+  height: 200px;
+  font-weight: 700;
+}
+
+#main {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#products-section {
+  display: flex;
+  width: 70vw;
+  background-color: #ffcc29;
+  /* las que le he agregado */
+  flex-wrap: wrap;
+  height: fit-content;
+  padding-bottom: 50px;
+}
+
+#cart-section {
+  width: 30vw;
+  min-width: 350;
+  background-color: #ca9e13;
+  /* height: fit-content; */
+
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFCC29;
+  height: fit-content;
+  width: fit-content
+  ;
+/* las que le he agregado */
+  padding-left:100px;
+  padding-top:100px;
+
+
+
+}
+
+.price{
+  color:white;
+  font-weight: bold;
+  padding-top: 5px;
+}
+/* .pricebtn {
+  flex-direction: row;
+  background-color: #F58634;
+} */
+
+.btn-add-product{
+  background-color: lightgrey;
+  padding: 7px 28px;
+  width: 40px;
+  height: 15px;
+  /* justify-content: center;
+  align-items: center; */
+  margin-top: 5px;
+  box-shadow: 5px 5px 15px gray;
+  margin-left:15px;
+}
+.product-data {
+  display: flex;
+  flex-direction: column;
+
+  /* las que le he agregado */
+  text-align: center;
+}
+
+img.product-foto {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 50px;
+  margin-top: 50px; */
+}
+
+.fruit-name{
+    background-color: #81B214;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.boton-compra{
+  background-color: #F58634;
+  height: 60px;
+  display: flex;
+justify-content: space-around;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+table{
+ /* padding-left: 10px; */
+  width: 70%;
+  margin: 0 auto;
+}
+
+th,td{
+  border: 1px solid white;
+  height: 30px;
+  background-color: lightgray;
+  color:black;
+}
