@@ -137,11 +137,14 @@ tr.append(thCant);
 tr.append(thProducto);
 tr.append(thPrecio);
 let cantidad = 1;
+
+let mainDiv = document.getElementById("products-section");
+
 //  function createProduct(product,image,price,id){
 
 products.forEach((producto) => {
   //creando mainDiv donde irea la clase product
-  let mainDiv = document.getElementById("products-section");
+  mainDiv = document.getElementById("products-section");
   let divProduct = document.createElement("div");
   divProduct.classList.add("product");
 
@@ -192,33 +195,68 @@ products.forEach((producto) => {
     let tdProducto = document.createElement("td");
     let tdPrecio = document.createElement("td");
     table.append(trproducto);
-  
-  
-  
-      tdCant.textContent= cantidad;
-      trproducto.append(tdCant);
-      trproducto.append(tdProducto);  
-      trproducto.append(tdPrecio);
 
-      tdProducto.textContent= producto.product;
-      tdPrecio.textContent= producto.price;
+    tdCant.textContent = cantidad;
+    trproducto.append(tdCant);
+    trproducto.append(tdProducto);
+    trproducto.append(tdPrecio);
+    tdProducto.textContent = producto.product;
+    tdPrecio.textContent = producto.price;
 
-  
-    
+    let trtotal = document.createElement("tr");
+    let tdtotal = document.createElement("td");
+    tdtotal.textContent = 'TOTAL';
+    tdtotal.colspan='2';
+    let tdprecioTotal = document.createElement("td");
 
-      
+    table.append(trtotal);
+    trtotal.append(tdtotal);
+    trtotal.append(tdprecioTotal);
+
      
-     
- 
-    
   });
   //   divBotonCompra.setAttribute("data-id-product");
 
   divPrecioBotonCompra.append(spanBotonCompra);
 });
 
+
+//////////
+
+function createProduct(product,image,price,id){
+  products.forEach((product) => {
+    let divProduct = document.createElement("div");
+    let img = document.createElement("img");
+    data.innerHTML =`
+    <div class="fruit-name">${product}</div>
+    <div class="price-btn">
+    <div class="price"> ${(price/100).toFixed(2)}euros/Kg</div>
+    <div class="btn btn-add product" data-id= "${id}"> Añadir</div>
+    </div>`;
+    divProduct.append(data);
+    return divProduct;
+
+  })
+
+
+
+}
+
+
+//Funcion para añadir producto al carrito
+function addToCart(e){
+  e.preventDefault();
+  let productId =e.target.getAttribute('data-id');
+  let product= products.find((item) => item.id= productId);
+  //Averiguar si el producto ya esta en el carrito
+  let productIndex = carrito.findIndex((item) => item.id == productId);
+}
+
+
+// mainDiv.lastChild.innerHTML =
+// ' <div><button>Atrás</button>Mostrando 1 de 3 <button>Adelante</button></div>';
+
 //  }
 
-
-
-
+// busco si esta en Arraysi si esta lo incremento
+//       hago otro array con sprean y le agrego cantidad    nodo.dataset.id hacer un filtro

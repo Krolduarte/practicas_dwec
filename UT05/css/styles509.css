@@ -1,0 +1,116 @@
+#boton {
+    background-color: rgb(50, 50, 243);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #formulario {
+    visibility:hidden;
+     position: absolute;
+  left:540px;
+      top:170px;
+     background-color:white;
+    margin: 0 auto;
+    width: 280px;
+    height: 270px;
+    margin-top: 50px;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+
+  input{
+      width:75%;
+      height:9px;
+      padding:10px 12px;
+  }
+
+  img{
+    height: 19px;
+    position: absolute;
+    right:5px;
+    top:5px;
+
+  }
+
+  input.login,input.register{
+      width:40%;
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  input#boton{
+      background-color: blue;
+      width: 250px;
+      height:50px;
+      text-align: center;
+      margin-top: 10px;
+  }
+ 
+  div#modalRegister {
+    visibility:hidden;
+      display:flex; 
+      flex-direction: column;
+      float:right;
+      position:absolute;
+      right:10px;
+      top:50px;
+      height:220px;
+      background-color:white;
+  }
+
+
+  div#modalLogin{
+    visibility:hidden;
+    display:flex; 
+    padding:10px 15px;
+    flex-direction: column;
+    float:right;
+    position:absolute;
+    right:10px;
+    top:50px;
+    height:220px;
+    background-color:white;
+    
+
+
+  }
+
+
+
+
+
+  #fondo{
+      position: absolute;
+      background-color: rgba(0,0,0,.55);
+      opacity: 0.8;
+      width: 100%;
+      height:100%;
+       display:none; 
+       margin: 0 auto;
+  }
+
+  .navegacion li{
+    display:inline-flex;
+    flex-direction:row;
+    padding: 9px 12px;
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+
+  }
+
+  ul.navegacion{
+margin-left: -40px;
+margin-top: -20px;
+
+  }
+
+hr{
+  margin-top: -15px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../UT05/css/styles509.css" />
+    <title>Document</title>
+  </head>
+  <style></style>
+
+  <body>
+    <div id="fondo">
+
+    </div>
+    <div>
+      <input id="boton" type="button" value="Login-Registration Modal" />
+    </div>
+
+    <div id="info"></div>
+
+    
+      <div id="formulario">
+        <form action="#">
+        <nav>
+          <ul class="navegacion">
+            <li id="loginnav">Login</li>
+            <li id="registernav">Register</li>
+            <img src="https://cdn-icons-png.flaticon.com/512/8221/8221059.png" id="closeBtn" alt="icono_de_cerrar">
+          </ul>
+        </nav>
+        <hr />
+    
+  
+      <div id="modalLogin">
+        
+            <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div>
+            <label for="passRepeat">Repeat Password</label>
+            <input type="password" name="passRepeat" id="passRepeat" required />
+          </div>
+  
+          <div>
+            <input type="submit" value="login" id="login" class="login" />
+          </div>
+        </form>
+        <div id="error"></div>
+        <div id="info"></div>
+      </div>
+
+      <div id="modalRegister">
+        <form action="#">
+         
+            <div>
+            <label for="text">Your name:</label>
+            <input type="text" name="nombre" id="nombre" />
+          </div>
+          <div>
+            <label for="password2">Password</label>
+            <input type="password" name="password2" id="password2" />
+          </div>
+         
+  
+          <div>
+            <input type="submit" value="register" id="register" class="register" />
+          </div>
+        </form>
+      </div>
+
+    </div>
+    
+
+   
+
+    <script src="../UT05/js/script509.js"></script>
+  </body>
+</html>

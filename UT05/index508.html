@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+   form{
+    
+     display: flex;
+      flex-direction: row;
+      background-color: lightgrey;
+ 
+    }
+
+div{
+    display:flex;
+        flex-direction: column;
+        padding: 20px 30px;
+}
+select{
+    width:150px;
+    height: 30px;
+}
+
+
+    
+  </style>
+
+  <body>
+    <div id="formulario">
+      <form action="">
+        <div>
+          <label for="comunidad">Comunidad Autónoma</label>
+          <select name="comunidad" id="comunidad">
+            <option>Castilla-León</option>
+            <option>Andalucía</option>
+            <option>Cataluña</option>
+            <option>Galicia</option>
+            
+          </select>
+        </div>
+        <div>
+          <label for="provincia">Provincia</label>
+          <select name="provincia" id="provincia">
+      
+          </select>
+        </div>
+        <div>
+          <label for="localidad">Localidad</label>
+          <select name="localidad" id="localidad">
+          
+          </select>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+        </div>
+      </form>
+    </div>
+
+    <script src="../UT05/js/script508.js"></script>
+    <script src="../UT05/js/provincias508.js"></script>
+  </body>
+</html>
