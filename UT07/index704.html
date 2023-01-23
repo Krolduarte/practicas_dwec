@@ -6,30 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    form {
+      width: 300px;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 50px;
+      margin: 50px auto;
+      background-color: #c7ebf0;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+    #enviar {
+      margin-top: 20px;
+      width: 20%;
+    }
+    div {
+      text-align: center;
+    }
+
+    .resultados {
+      font-size: 15px;
+    }
+  </style>
   <body>
     <form action="#" method="post">
       <h1>Ver el tiempo Actual</h1>
 
       <label for="longitud">Longitud:</label>
-      <input type="text" name="longitud" id="longitud">
+      <input type="text" name="longitud" id="longitud" />
 
       <label for="latitud">Latitud:</label>
-      <input type="text" name="latitud" id="latitud">
+      <input type="text" name="latitud" id="latitud" />
 
       <label for="key">Key:</label>
-      <input type="text" name="key" id="key">
+      <input type="text" name="key" id="key" />
 
-      <input type="submit" value="enviar" id="enviar">
+      <input type="submit" value="enviar" id="enviar" />
+    </form>
 
-    </form>  
-    
-    
-<div>
-<h1>Resultados:</h1>
-
-</div>
-
-
+    <div class="resultados"></div>
 
     <script src="js/script704.js"></script>
   </body>
