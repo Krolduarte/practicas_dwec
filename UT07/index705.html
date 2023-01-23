@@ -4,33 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
     <title>Document</title>
   </head>
+  <style>
+
+    body{
+      font-family: 'Lato', sans-serif;
+    }
+    form {
+      width: 300px;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 50px;
+      margin: 50px auto;
+      background-color: #c7ebf0;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+    #enviar {
+      margin-top: 20px;
+      width: 20%;
+    }
+    .max,.min{
+      width: 10px;
+      height:10px;
+    }
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+     align-items: center;
+}
+
+div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    .resultados {
+      display:flex;
+      flex-wrap: wrap;
+     align-items: center;
+     /* border:10px inset grey; */
+     width:400px;
+     padding:20px;
+     border-radius:20px;
+     gap:10px;
+    
+    }
+
+    .ciudad{
+   width:180px;
+    }
+
+   
+    .icon{
+      width: 50px;
+      height:50px;
+    }
+
+    .icon-descripcion{
+      width: 80px;
+      height:80px;
+    }
+
+    
+    
+    span{
+      
+      font-size: 30px;
+    }
+    .ciudad{
+      font-size: 50px;
+    }
+
+   
+
+  </style>
   <body>
     <form action="#" method="post">
       <h1>Ver el tiempo Actual</h1>
 
-      <label for="longitud">Longitud:</label>
-      <input type="text" name="longitud" id="longitud">
-
-      <label for="latitud">Latitud:</label>
-      <input type="text" name="latitud" id="latitud">
+      <label for="ciudad">Ciudad:</label>
+      <input type="text" name="ciudad" id="ciudad" />
 
       <label for="key">Key:</label>
-      <input type="text" name="key" id="key">
+      <input type="text" name="key" id="key" />
 
-      <input type="submit" value="enviar" id="enviar">
+      <input type="submit" value="enviar" id="enviar" />
+    </form>
 
-    </form>  
-    
-    
-<div>
-<h1>Resultados:</h1>
-
-</div>
+<div class="contenedor">
 
 
+    <div class="resultados"></div>
+  </div>
 
     <script src="js/script705.js"></script>
   </body>
 </html>
+
+       
